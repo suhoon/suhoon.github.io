@@ -1,0 +1,41 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="assets/style2.css">
+    </head>
+    
+<h1> 오늘 먹을 음식은 </h1>
+
+
+<% if @random == [1]  %>
+    <img src="/assets/boonsick.jpg" alt="1"  />
+           <div>분식</div>
+    <% elsif @random == [2] %>
+        <img src="/assets/chicken.jpg" alt="2"  />
+           <div>치킨</div>
+     <% elsif @random == [3] %>
+        <img src="/assets/gogi.jpg" alt="3"  />
+           <div>고기</div>
+     <% elsif @random == [4] %>
+        <img src="/assets/hamburger.jpg" alt="4" />
+           <div>햄버거</div>
+     <% elsif @random == [5] %>
+        <img src="/assets/hansick.jpg" alt="5" />
+           <div>한식</div>
+     <% elsif @random == [6] %>
+        <img src="/assets/illsick.jpg" alt="6" />
+           <div>일식</div>
+     <% elsif @random == [7] %>
+        <img src="/assets/joongsick.jpg" alt="7" />
+           <div>중식</div>
+     <% elsif @random == [8] %>
+        <img src="/assets/ramen.jpg" alt="8" />
+           <div>라면</div>
+     <% else %>
+        <img src="/assets/pizza.jpg" alt="9" />
+        <div>피자</div>
+
+<% end %>
+
+</html>
